@@ -1,0 +1,474 @@
+html, body {
+  background: Black;
+  height: 100%;
+  width: 100%;
+  margin: 10px;
+  margin: 0;
+  color: whitesmoke;
+	
+}
+
+/*@media screen and (max-width: 1024px) {
+  body {
+    background-color: lavender;
+  }
+}*/
+
+h1, h4{
+	text-align: center;
+	color: whitesmoke;
+  margin: 2rem;
+}
+h5 {
+  margin: 20px;
+}
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navbar{
+	background:rgb(121, 0, 0);
+  
+}
+
+.nav-link {
+	display: inline-block;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.699);
+	transition: 0.3s;
+}
+.nav-link:hover{
+	color: white;
+	transition: 0.1ms;
+}
+
+@media (min-width: 1024px){
+.nav-link {
+	display: inline-block;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.699);
+	transition: 0.3s;
+}
+.nav-link::after{
+	content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: white;
+  transition: 0.3s;
+}
+.nav-link:hover::after{
+	width: 100%;
+}
+.nav-link:hover{
+	color: white;
+	transition: 0.3s;
+}
+
+}
+
+
+.item {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+
+footer{
+	text-align: center;
+	align-items: center;
+	padding: 5px;
+  background-color: black;
+  color: rgb(160,160,160);
+}
+
+.border1{
+  border-top: 1px solid rgb(160,160,160);
+}
+
+.icon {
+  color: rgb(160,160,160);
+  transition: 0.1ms;
+}
+.icon:hover{
+  color: rgb(160,160,160);
+  transition: 0.1ms;
+}
+
+.bi{
+  transition: 0.3s;
+}
+
+.bi-heart:hover{
+  transition: 0.3s;
+  color: red;
+}
+.bi-instagram:hover{
+  transition: 0.3s;
+  color: rgb(188, 42, 141);
+
+}
+.bi-twitter:hover{
+  transition: 0.3s;
+  color: rgb(29, 161, 242)
+}
+.bi-whatsapp:hover{
+  transition: 0.3s;
+  color: #25D366
+}
+.bi-messenger:hover{
+  transition: 0.3s;
+  color: #006AFF
+}
+.bi-github:hover {
+  color: #6e5494
+}
+.bi-linkedin:hover{
+  color: #2867B2;
+}
+.fas{
+  transition: 0.3s;
+}
+.fa-globe:hover{
+  transition: 0.3s;
+  color: #986435;
+}
+.fa-bars{
+  color: rgba(255, 255, 255, 0.699);
+  transition: 0.1ms;
+}
+.fa-bars:hover{
+  color: white;
+  transition: 0.1ms;
+}
+
+@media screen and (max-width: 1024px) {
+  .bi-heart {
+    color: red;
+  }
+  .bi-instagram {
+    color: rgb(188, 42, 141);
+  }
+  .bi-twitter {
+    color: rgb(29, 161, 242);
+  }
+  .bi-whatsapp {
+    color: #25D366
+  }
+  .bi-messenger {
+    color: #006AFF
+  }
+  .bi-github {
+    color: #6e5494
+  }
+  .bi-linkedin {
+    color: #2867B2
+  }
+  .fa-globe{
+    color:#986435;
+  }
+}
+
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: #CA4246;
+  text-transform: uppercase;
+  
+  /* Create the gradient. */
+   background-image: linear-gradient(
+        52deg,
+        #CA4246 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #8B9862 50%, 
+        #8B9862 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+}
+.gradient-text:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #000000;
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #000000;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(121, 0, 0); 
+    background-image: rgb(121, 0, 0);
+}
+
+
+.main2{
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  padding: 10px;
+  transform: translate(-50%,-50%);
+  width: auto;
+  border-radius: 10px;
+  background: rgb(121, 0, 0);
+  color: whitesmoke;
+}
+
+.responsive-map{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.responsive-map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    padding: 15px;
+}
+
+.responsive-frame{
+    overflow:hidden;
+    padding-bottom:100%;
+    position:relative;
+    height:0;
+}
+.responsive-frame iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    padding: 15px;
+}
+
+.page-section {
+  margin: 3rem 0;
+}
+
+.page-section-2 {
+  margin-top: 3rem;
+}
+
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  padding-bottom:.5rem;
+
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+
+.section-heading .section-heading-under {
+  display: block;
+  font-size: 1rem;
+  text-transform: none;
+  font-weight: 300;
+  margin-top:.5rem;
+}
+
+.intro {
+  position: relative;
+}
+
+.intro-text{
+  background:rgb(121, 0, 0);
+  top: 0;
+  right: 0;
+  color: cornsilk;
+}
+
+
+@media (min-width: 992px) {
+  .intro .intro-text {
+    left: 600;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-text .intro-button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 45%;
+  }
+}
+
+
+.img-hover-zoom--blur{
+  width: 75%;
+  overflow: hidden;
+  float: left;
+
+} 
+/* Blur-zoom Container */
+.img-hover-zoom--blur img {
+  transition: transform 1s, filter 1s ease-in-out;
+  filter: blur(1.5px);
+  transform: scale(1.1);
+}
+
+/* The Transformation */
+.img-hover-zoom--blur:hover img {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+@media screen and (max-width: 1024px){
+  .img-hover-zoom--blur{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .img-hover-zoom--blur img {
+    filter: blur(0);
+    transform: scale(1);
+  }
+  
+}
+
+.img-hover-zoom--blur-2{
+  width: 75%;
+  overflow: hidden;
+  float:right;
+} 
+/* Blur-zoom Container */
+.img-hover-zoom--blur-2 img {
+  transition: transform 1s, filter 1s ease-in-out;
+  filter: blur(1.5px);
+  transform: scale(1.1);
+}
+
+/* The Transformation */
+.img-hover-zoom--blur-2:hover img {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+@media screen and (max-width: 1024px){
+  .img-hover-zoom--blur-2{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .img-hover-zoom--blur-2 img {
+    filter: blur(0);
+    transform: scale(1);
+  }
+  
+}
+
+.intro-text-2{
+  background:rgb(121, 0, 0);
+  top: 0;
+  left: 0;
+  color: cornsilk;
+}
+
+
+@media (min-width: 992px) {
+  .intro .intro-text-2 {
+    right: 600;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+  .intro .intro-text-2 .intro-button {
+    width: 100%;
+    right: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro .intro-text-2 {
+    width: 45%;
+  }
+}
+
+
+.cta {
+  color: cornsilk;
+}
+
+.cta .cta-inner {
+  position: relative;
+  padding: 2rem;
+  background: rgb(121, 0, 0);
+}
+
+.social{
+  transition: 0.3s;
+ }
+.social:hover{
+  transition: 0.3s;
+  color: white;
+}
+
+.make-flex{
+  display: flex;
+}
