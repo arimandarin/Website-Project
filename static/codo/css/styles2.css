@@ -1,5 +1,5 @@
 html, body {
-  background: Black;
+  background: whitesmoke;
   height: 100%;
   width: 100%;
   margin: 10px;
@@ -17,7 +17,7 @@ html, body {
 h1, h4{
 	text-align: center;
 	color: whitesmoke;
-  margin: 2rem;
+  padding: 2rem;
 }
 h5 {
   margin: 20px;
@@ -28,18 +28,18 @@ p {
 }
 
 .navbar{
-	background:rgb(121, 0, 0);
+	background:white;
   
 }
 
 .nav-link {
 	display: inline-block;
 	text-decoration: none;
-	color: rgba(255, 255, 255, 0.699);
+	color: black;
 	transition: 0.3s;
 }
 .nav-link:hover{
-	color: white;
+	color: black;
 	transition: 0.1ms;
 }
 
@@ -47,22 +47,23 @@ p {
 .nav-link {
 	display: inline-block;
 	text-decoration: none;
-	color: rgba(255, 255, 255, 0.699);
+	color: black;
 	transition: 0.3s;
+  font-weight: 500;
 }
 .nav-link::after{
 	content: '';
   width: 0px;
   height: 1px;
   display: block;
-  background: white;
+  background: rgb(170, 0, 0);
   transition: 0.3s;
 }
 .nav-link:hover::after{
 	width: 100%;
 }
 .nav-link:hover{
-	color: white;
+	color: rgb(170,0,0);
 	transition: 0.3s;
 }
 
@@ -75,12 +76,15 @@ p {
 }
 
 
+
 footer{
 	text-align: center;
 	align-items: center;
-	padding: 5px;
-  background-color: black;
+  background: rgb(121, 0, 0);
+  background-size: 100%;
   color: rgb(160,160,160);
+  margin-top: 5rem; 
+  padding: 3rem 0 3rem;
 }
 
 .border1{
@@ -135,11 +139,11 @@ footer{
   color: #986435;
 }
 .fa-bars{
-  color: rgba(255, 255, 255, 0.699);
+  color: black;
   transition: 0.1ms;
 }
 .fa-bars:hover{
-  color: white;
+  color: black;
   transition: 0.1ms;
 }
 
@@ -173,22 +177,22 @@ footer{
 
 .gradient-text {
   /* Fallback: Set a background color. */
-  background-color: #CA4246;
+  background-color: rgb(121, 0, 0);
   text-transform: uppercase;
   
   /* Create the gradient. */
-   background-image: linear-gradient(
+  background-image: linear-gradient(
         52deg,
-        #CA4246 16.666%, 
-        #E16541 16.666%, 
-        #E16541 33.333%, 
-        #F18F43 33.333%, 
-        #F18F43 50%, 
-        #8B9862 50%, 
-        #8B9862 66.666%, 
-        #476098 66.666%, 
-        #476098 83.333%, 
-        #A7489B 83.333%);
+        rgb(121, 0, 0) 16.666%, 
+        #bb4221 16.666%, 
+        #bb4221 33.333%, 
+        #b8611e 33.333%, 
+        #b8611e  50%, 
+        #5f7517 50%, 
+        #5f7517 66.666%, 
+        #203c7a 66.666%, 
+        #203c7a 83.333%, 
+        #7a186d 83.333%);
   
   /* Set the background size and repeat properties. */
   background-size: 100%;
