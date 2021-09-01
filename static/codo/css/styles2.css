@@ -35,10 +35,10 @@ p {
 	display: inline-block;
 	text-decoration: none;
 	color: black;
-	transition: 0.3s;
+	transition: 0.1ms;
 }
 .nav-link:hover{
-	color: black;
+	color: rgb(170,0,0);
 	transition: 0.1ms;
 }
 
@@ -65,9 +65,7 @@ p {
 	color: rgb(170,0,0);
 	transition: 0.3s;
 }
-
 }
-
 
 .item {
   margin-right: 1.5rem;
@@ -75,11 +73,10 @@ p {
 }
 
 
-
 footer{
 	text-align: center;
 	align-items: center;
-  background: black;
+  background: rgb(20, 20, 20);
   background-size: 100%;
   color: rgb(160,160,160);
   padding: 3rem 0 3rem;
@@ -96,6 +93,14 @@ footer{
 .icon:hover{
   color: rgb(160,160,160);
   transition: 0.1ms;
+}
+
+.social{
+  transition: 0.3s;
+ }
+.social:hover{
+  transition: 0.3s;
+  color: white;
 }
 
 .bi{
@@ -141,6 +146,14 @@ footer{
   transition: 0.1ms;
 }
 .fa-bars:hover{
+  color: black;
+  transition: 0.1ms;
+}
+.fa-times{
+  color: black;
+  transition: 0.1ms;
+}
+.fa-times:hover{
   color: black;
   transition: 0.1ms;
 }
@@ -298,6 +311,7 @@ footer{
 
 .page-section-2 {
   margin-top: 3rem;
+  background: #a81400;
 }
 
 
@@ -333,7 +347,7 @@ footer{
 }
 
 .intro-text{
-  background:rgb(121, 0, 0);
+  background:#a81400;
   top: 0;
   right: 0;
   color: cornsilk;
@@ -424,7 +438,7 @@ footer{
 }
 
 .intro-text-2{
-  background:rgb(121, 0, 0);
+  background:#a81400;
   top: 0;
   left: 0;
   color: cornsilk;
@@ -460,7 +474,7 @@ footer{
 .cta-inner {
   position: relative;
   padding: 2rem;
-  background: rgb(121, 0, 0);
+
 }
 
 .social{
