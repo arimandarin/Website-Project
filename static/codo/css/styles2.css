@@ -215,16 +215,18 @@ footer{
   -webkit-text-fill-color: transparent; 
   
   /* Animate the text when loading the element. */
-    /* This animates it on page load and when hovering out. */
-    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+  /* This animates it on page load and when hovering out. */
+  /*animation: rainbow-text-simple-animation-rev 0.75s ease forwards;*/
 
 }
-.gradient-text:hover{
+
+/*.gradient-text:hover{
     animation: rainbow-text-simple-animation 0.5s ease-in forwards;
 }
+
 /* Move the background and make it smaller. */
 /* Animation shown when entering the page and after the hover animation. */
-@keyframes rainbow-text-simple-animation-rev {
+/*@keyframes rainbow-text-simple-animation-rev {
     0% {
         background-size: 650%;
     }
@@ -237,7 +239,7 @@ footer{
 }
 /* Move the background and make it larger. */
 /* Animation shown when hovering over the text. */
-@keyframes rainbow-text-simple-animation {
+/*@keyframes rainbow-text-simple-animation {
     0% {
         background-size: 100%;
     }
@@ -247,7 +249,7 @@ footer{
     100% {
         background-size: 650%;
     }
-}
+}*/
 
 ::-webkit-scrollbar{
     width: 10px;
@@ -485,6 +487,54 @@ footer{
   color: white;
 }
 
-.make-flex{
-  display: flex;
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+ 
+}
+
+.overlay:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text {
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.boton {
+  background: white;
+  color:black;
+  border-radius: 0%;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  border-color: white;
+}
+.boton:hover{
+  background: black;
+  color: white;
+  transition: 0.2s;
 }
