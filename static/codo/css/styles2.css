@@ -79,7 +79,7 @@ footer{
   background: rgb(20, 20, 20);
   background-size: 100%;
   color: rgb(160,160,160);
-  padding: 3rem 0 3rem;
+  padding: 2.5rem 0 2.5rem;
 }
 
 .border1{
@@ -265,18 +265,6 @@ footer{
 }
 
 
-.main2{
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  padding: 10px;
-  transform: translate(-50%,-50%);
-  width: auto;
-  border-radius: 10px;
-  background: rgb(121, 0, 0);
-  color: whitesmoke;
-}
-
 .responsive-map{
     overflow:hidden;
     padding-bottom:50%;
@@ -308,11 +296,11 @@ footer{
 }
 
 .page-section {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .page-section-2 {
-  margin-top: 3rem;
+  margin-top: 2rem;
   background: #a81400;
 }
 
@@ -360,7 +348,7 @@ footer{
   .intro .intro-text {
     left: 600;
     width: 60%;
-    margin-top: 3rem;
+    margin-top: 2rem;
     position: absolute;
   }
   .intro .intro-text .intro-button {
@@ -389,6 +377,7 @@ footer{
   transition: transform 1s, filter 1s ease-in-out;
   filter: blur(1.5px);
   transform: scale(1.1);
+  width: 100%;
 }
 
 /* The Transformation */
@@ -451,7 +440,7 @@ footer{
   .intro .intro-text-2 {
     right: 600;
     width: 60%;
-    margin-top: 3rem;
+    margin-top: 2rem;
     position: absolute;
   }
   .intro .intro-text-2 .intro-button {
