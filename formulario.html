@@ -42,8 +42,8 @@
                             <a class="nav-link" href="#" target="_self">Store</a>
                         </li>
                         <li class="nav-item dropdown item">
-                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Dropdown
                                 <i class="bi bi-chevron-down"></i>
                             </a>
@@ -57,10 +57,10 @@
                             </ul>
                         </li>
                         <li class="nav-item item">
-                            <a class="nav-link" href="formulario.html" target="_self">Survey</a>
+                            <a class="nav-link" href="contacto.html" target="_self">Contact</a>
                         </li>
                         <li class="nav-item item">
-                            <a class="nav-link" href="contacto.html" target="_self">Contact</a>
+                            <a class="nav-link" href="formulario.html" target="_self">Log In/Register</a>
                         </li>
                     </ul>
                 </div>
@@ -68,12 +68,105 @@
         </nav>
     </header>
     <main>
-        <div class="responsive-frame">
-            <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSdu7ikVxppyxs7G68fzVUCfWjmbbR8SMofBvzJrbcwGg25Ogw/viewform?embedded=true"
-                width="640" height="2967" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-
+        <section class="page-section blk">
+            <div class="container">
+                <form class="row g-3" action="show_data.html" target="_blank">
+                    <legend>Complete sus datos personales</legend>
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre aquí...">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="surname" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="surname" placeholder="Ingrese su apellido aquí...">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su email aquí...">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="birthdate" class="form-label">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="birthdate">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="country" class="form-label">País</label>
+                        <select class="form-select" id="country">
+                            <option selected>Choose...</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="chile">Chile</option>
+                            <option value="uruguay">Uruguay</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="state" class="form-label">Provincia</label>
+                        <select id="state" class="form-select">
+                            <option selected>Choose...</option>
+                            <option value="provincia1">Provincia 1</option>
+                            <option value="provincia2">Provincia 2</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="localidad" class="form-label">Localidad</label>
+                        <select id="localidad" class="form-select">
+                            <option selected>Choose...</option>
+                            <option value="localidad1">Localidad 1</option>
+                            <option value="localidad2">Localidad 2</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="address" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="address" placeholder="Ingrese su dirección aquí...">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="number" class="form-label">Número</label>
+                        <input type="number" class="form-control" id="number">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="zip" class="form-label">Código postal</label>
+                        <input type="number" class="form-control" id="zip">
+                    </div>
+                    <div class="col-12">
+                        Género: &nbsp;
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Femenino</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">No binario</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Prefiero no declarar</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Otro</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="comments"></textarea>
+                            <label for="comments">Comentarios...</label>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="boton2 rounded">Registrarse</button>
+                        <button type="reset" class="boton2 rounded">Borrar</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
     </main>
     <footer class="page-footer" id="contacto">
         <div class="container-fluid text-center text-md-left">
@@ -82,7 +175,8 @@
                 <br>
                 <ul class="nav justify-content-center pb-3 mb-3" style="margin: 3rem 1rem 0; display: inline-flex;">
                     <li class="nav-item">
-                        <a class="icon px-2" href="https://www.instagram.com/?hl=en"><i class="h2 bi bi-instagram"></i></a>
+                        <a class="icon px-2" href="https://www.instagram.com/?hl=en"><i
+                                class="h2 bi bi-instagram"></i></a>
                     </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <li class="nav-item">
                         <a class="icon px-2" href="https://twitter.com/"><i class="h2 bi bi-twitter"></i></a>
