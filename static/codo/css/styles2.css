@@ -469,6 +469,9 @@ footer{
 }
 
 
+.blk{
+  color: black;
+}
 .cta {
   color: cornsilk;
 }
@@ -537,4 +540,15 @@ footer{
   background: black;
   color: white;
   transition: 0.2s;
+}
+
+.boton2{
+  background: rgb(170, 0, 0);
+  border: none;
+  color: white;
+  padding: 0.5rem;
+}
+.boton2:hover{
+  background: rgb(121, 0, 0);
+  transition: 0.3s;
 }
