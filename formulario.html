@@ -72,58 +72,79 @@
             <div class="container">
                 <form class="row g-3" action="show_data.html" target="_blank">
                     <legend>Complete sus datos personales</legend>
-                    <div class="col-md-6">
-                        <label for="name" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre aquí...">
+                    <div class="col-12">
+                        <div class="input-group">
+                            <span class="input-group-text">Nombre y apellido</span>
+                            <input type="text" aria-label="nombre" class="form-control" required>
+                            <input type="text" aria-label="apellido" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="input-group">
+                            <span class="input-group-text">Contraseña</span>
+                            <input type="password" aria-label="password" class="form-control" required>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="surname" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="surname" placeholder="Ingrese su apellido aquí...">
+                        <div class="input-group">
+                            <span class="input-group-text">Email</span>
+                            <input type="email" aria-label="email" class="form-control" required>
+                        </div>   
                     </div>
                     <div class="col-md-6">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingrese su email aquí...">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="birthdate" class="form-label">Fecha de nacimiento</label>
-                        <input type="date" class="form-control" id="birthdate">
+                        <div class="input-group">
+                            <span class="input-group-text">Fecha de nacimiento</span>
+                            <input type="date" aria-label="birthdate" class="form-control" required>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        <label for="country" class="form-label">País</label>
-                        <select class="form-select" id="country">
-                            <option selected>Choose...</option>
-                            <option value="argentina">Argentina</option>
-                            <option value="chile">Chile</option>
-                            <option value="uruguay">Uruguay</option>
-                        </select>
+                        <div class="input-group">
+                            <span class="input-group-text">País</span>
+                            <select type="form-select" aria-label="country" class="form-select" required>
+                                <option selected>Seleccionar...</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="chile">Chile</option>
+                                <option value="uruguay">Uruguay</option>
+                                </select>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        <label for="state" class="form-label">Provincia</label>
-                        <select id="state" class="form-select">
-                            <option selected>Choose...</option>
-                            <option value="provincia1">Provincia 1</option>
-                            <option value="provincia2">Provincia 2</option>
-                        </select>
+                        <div class="input-group">
+                            <span class="input-group-text">Provincia</span>
+                            <select type="form-select" aria-label="state" class="form-select" required>
+                                <option selected>Seleccionar...</option>
+                                <option value="provincia1">Provincia 1</option>
+                                <option value="provincia2">Provincia 2</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        <label for="localidad" class="form-label">Localidad</label>
-                        <select id="localidad" class="form-select">
-                            <option selected>Choose...</option>
-                            <option value="localidad1">Localidad 1</option>
-                            <option value="localidad2">Localidad 2</option>
-                        </select>
+                        <div class="input-group">
+                            <span class="input-group-text">Localidad</span>
+                            <select type="form-select" aria-label="localidad" class="form-select" required>
+                                <option selected>Seleccionar...</option>
+                                <option value="localidad1">Localidad 1</option>
+                                <option value="localidad2">Localidad 2</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="address" class="form-label">Dirección</label>
-                        <input type="text" class="form-control" id="address" placeholder="Ingrese su dirección aquí...">
+                        <div class="input-group">
+                            <span class="input-group-text">Dirección</span>
+                            <input type="text" aria-label="address" class="form-control" required>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <label for="number" class="form-label">Número</label>
-                        <input type="number" class="form-control" id="number">
+                    <div class="col-md-3">
+                        <div class="input-group">
+                            <span class="input-group-text">Número</span>
+                            <input type="number" aria-label="number" class="form-control" required>
+                        </div>
                     </div>
-                    <div class="col-md-2">
-                        <label for="zip" class="form-label">Código postal</label>
-                        <input type="number" class="form-control" id="zip">
+                    <div class="col-md-3">
+                        <div class="input-group">
+                            <span class="input-group-text">Código postal</span>
+                            <input type="number" aria-label="zip" class="form-control" required>
+                        </div>
                     </div>
                     <div class="col-12">
                         Género: &nbsp;
@@ -154,9 +175,9 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="comments"></textarea>
-                            <label for="comments">Comentarios...</label>
+                        <div class="input-group">
+                            <span class="input-group-text">Comentarios</span>
+                            <textarea class="form-control" aria-label="Comentarios"></textarea>
                         </div>
                     </div>
                     <div class="col-12 text-center">
