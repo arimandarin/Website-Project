@@ -4,8 +4,8 @@ html, body {
   width: 100%;
   margin: 0;
   color: whitesmoke;
-	
 }
+
 
 /*@media screen and (max-width: 1024px) {
   body {
@@ -47,13 +47,14 @@ p {
 	text-decoration: none;
 	color: black;
 	transition: 0.1ms;
+  font-weight: 500;
 }
 .nav-link:hover{
 	color: rgb(170,0,0);
 	transition: 0.1ms;
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1025px){
 .nav-link {
 	display: inline-block;
 	text-decoration: none;
