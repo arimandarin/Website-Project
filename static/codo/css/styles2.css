@@ -642,16 +642,38 @@ footer{
 }
 
 .flex-container > div > div{
-  flex: 25%;
+  flex: 33%;
 }
 @media (max-width: 800px) {
   .flex-item-right, .flex-item-left {
-    flex: 30%;
+    flex: 50%;
   }
 }
 
 @media (max-width: 400px) {
   .flex-item-right, .flex-item-left {
-    flex: 50%;
+    flex: 100%;
   }
+}
+
+.boton3 {
+  background: rgb(170, 0, 0);
+  color:white;
+  border-radius: 0%;
+  text-transform: uppercase;
+  
+}
+.boton3:hover{
+  background: rgb(121, 0, 0);
+  transition: 0.2s;
+}
+
+.flex-container p:first-child{
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 0;
+}
+.flex-container p:nth-child(2){
+  font-size: 14px;
+  margin-top: 0;
 }
