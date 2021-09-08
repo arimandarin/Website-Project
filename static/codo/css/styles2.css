@@ -325,6 +325,12 @@ footer{
   margin: 2.5rem;
 }
 
+@media (max-width: 1024px){
+  .page-section-3{
+  margin: 2.5rem 0.5rem;
+}
+}
+
 .section-heading {
   text-transform: uppercase;
 }
@@ -635,27 +641,6 @@ footer{
   text-decoration: underline;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.flex-container > div > div{
-  flex: 33%;
-}
-@media (max-width: 800px) {
-  .flex-item-right, .flex-item-left {
-    flex: 50%;
-  }
-}
-
-@media (max-width: 400px) {
-  .flex-item-right, .flex-item-left {
-    flex: 100%;
-  }
-}
-
 .boton3 {
   background: rgb(170, 0, 0);
   color:white;
@@ -668,12 +653,15 @@ footer{
   transition: 0.2s;
 }
 
-.flex-container p:first-child{
+.store-container p:first-child{
   font-size: 14px;
   font-weight: 500;
-  margin-top: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
-.flex-container p:nth-child(2){
+.store-container p:nth-child(2){
   font-size: 14px;
   margin-top: 0;
+  margin-bottom: 10px;
+  color: rgb(170, 0, 0)
 }
