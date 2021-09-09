@@ -499,6 +499,7 @@ footer{
 
 .social{
   transition: 0.3s;
+  text-transform: uppercase;
  }
 .social:hover{
   transition: 0.3s;
