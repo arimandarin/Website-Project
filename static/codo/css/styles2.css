@@ -159,14 +159,14 @@ footer{
   transition: 0.3s;
   color: #986435;
 }
-.fa-bars{
+/*.fa-bars{
   color: black;
   transition: 0.1ms;
 }
 .fa-bars:hover{
   color: black;
   transition: 0.1ms;
-}
+}*/
 .fa-times{
   color: black;
   transition: 0.1ms;
