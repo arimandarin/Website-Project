@@ -6,6 +6,7 @@ html, body {
   color: whitesmoke;
   display: flex;
   flex-direction: column;
+
 }
 
 
@@ -173,6 +174,39 @@ footer{
 .fa-times:hover{
   color: black;
   transition: 0.1ms;
+}
+
+
+.ham {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  
+  
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#000;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
 }
 
 @media screen and (max-width: 1024px) {
