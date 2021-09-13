@@ -6,8 +6,6 @@ html, body {
   color: whitesmoke;
   display: flex;
   flex-direction: column;
-  font-family: 'Hind Siliguri', sans-serif;
-
 }
 
 
@@ -40,11 +38,6 @@ p {
 }
 
 
-
-.navbar{
-	background:white;
-  
-}
 
 .nav-link {
 	display: inline-block;
@@ -239,7 +232,7 @@ footer{
 
 
 .gradient-text {
-  font-weight: 600;
+
   /* Fallback: Set a background color. */
   background-color: rgb(121, 0, 0);
   text-transform: uppercase;
